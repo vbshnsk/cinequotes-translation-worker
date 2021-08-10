@@ -33,10 +33,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Setup Node
+      - name: Setup Node 13
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '13'
       - name: Install deps, eslint and plugins
         run: npm i
       - name: Run linter
